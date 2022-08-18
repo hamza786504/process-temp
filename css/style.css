@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+* {
+    margin: 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+h1 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+:root {
+    --red: #FF3333;
+    --blue: #3347C4;
+}
+body {
+    overflow-x: hidden !important;
+    background-color: #9c9c9c;
+    font-family: 'Raleway', sans-serif;
+}
+.main-template {
+    background-color: #FCFCFC;
+    max-width: 650px !important;
+    margin: 0 auto;
+}
+header{
+    background-color: white;
+}
+.header {
+    text-align: center;
+    color: rgb(242, 242, 242);
+    padding: 55px 0 10px;
+    border-radius: 3px;
+}
+.vertical_line{
+    width: 0.5px !important;
+    margin: 15px auto;
+    height: 55px;
+    background-color: var(--red);
+}
+.header h1 {
+    color: var(--blue);
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px !important;
+}
+header>.logo_cover>img {
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+    max-width: 155px;
+}
+.dotted_line{
+    height: 100%;
+    width: 0;
+    border: 0.1px dashed #ffd9d9;
+    margin: 0 20% 0 auto;
+}
+.steps_details p{
+    color: #383838;
+    font-size: 1.1em;
+    line-height: 22px;
+    text-align: left;
+font: normal normal medium 16px/22px Raleway;
+}
+.step_heading .heading{
+    color: #3347C4;
+    font-size: 1em;
+    font-weight: bold;
+}
+.step_heading{
+    position: relative;
+}
+.steps_details{
+    padding-left: 1.4rem !important;
+}
+.step_heading span{
+    position: absolute;
+    top: 50%; 
+    left: -9%; 
+    color: transparent !important;
+    transform: translateY(-50%);
+    max-width: 43px;
+}
+.card_outer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 120px;
+    padding: 15px 20px;
+    height: 100%;
+    cursor: pointer;
+    max-width: 200px;
+    transform: translateY(0px);
+    transition: all linear 0.2s;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 15px #0000000F;
+    border-radius: 5px;
+}
+.card_outer h6 {
+    font-size: 14px;
+    font: normal normal medium 14px/16px Raleway;
+    font-weight: bold;
+    color: #3347C4;
+}
+button{
+    background-color:#3347C41A;
+    color: var(--blue);
+    border: none;
+    padding: 7px 13px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+button .icon{
+    color: inherit;
+    margin-left: 5px;
+}
+.dashed_cards{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center !important;
+}
+.dashed_card{
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0px;
+    border: 0.25px dashed #ffd9d9;
+    padding: 10px;
+    max-width: 130px;
+    text-align: center;
+}
+.dashed_card h5{
+    font-size: 12px;
+    color: #2e2e2e;
+}
+.step_counting{
+    background-color: #fce7e7;
+    /* width: 30px; */
+    flex-basis: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--blue);
+    font-size: 17px;
+    font-weight: 500;
+}
+.counting_steps{
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.sub_step{
+    /* flex-basis: 30%; */
+    width: 100%;
+    margin: 10px auto 0 0;
+}
+.sub_step_text{
+    flex: 1;
+    font-size: 12px;
+}
+p a{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+}
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #3347C4;
+    padding-top: 1em;
+    color: white;
+}
+.copyrights {
+    font-size: 14px;
+    text-align: center;
+    background: #3346c4cb;
+    padding: 5px 0;
+}
+.copyrights span{
+    color: #FFFFFF;
+    font-size: 10px;
+}
+.horizontal_line{
+    height: 1px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #6779ee17;
+}
+ul{
+    list-style: none;
+    margin-bottom: 0;
+    margin: 0 auto !important;
+    max-width: 330px;
+    width: auto;
+}
+ul li{
+    position: relative;
+    padding-left: 30px;
+    width: auto;
+    max-width: 300px;
+}
+ul li::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 10px;
+    width: 10px;
+    content: "";
+    background: url("../images/dot.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.back{
+    background: linear-gradient(rgba(255, 255, 255, 0.8) , rgba(255, 255, 255, 0.8)) , url("../images/absent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+.footer_texts{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer_text1{
+    flex-basis: 100%;
+    text-align: center;
+}
+.footer_text1 p , .footer_text1 h6{
+    text-align: center;
+}
+.footer_text2 p , .footer_text2 h6{
+    text-align: center;
+}
+.footer_text3 p , .footer_text3 h6{
+    text-align: center;
+}
+.footer_text2 , .footer_text3{
+    flex-basis: 47%;
+    margin-top: 20px;
+    text-align: center;
+}
+.footer_text3{
+    border-left: 1px solid #6779ee;
+}
+
+
+
+
+h3.steps {
+    font-size: 22px;
+    line-height: 140%;
+    padding: 20px 0px 5px;
+    color: #00439f;
+}
+
+
+
+.card_outer:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+.H3 {
+    font-family: 'Raleway', sans-serif;
+    margin: 5px 0;
+    text-align: center;
+    font: normal normal medium 16px/19px Raleway;
+    letter-spacing: 0px;
+    color: var(--blue);
+    font-size: 1em;
+}
+
+
+
+.step-expanation{
+    background-color: #FCFCFC;
+}
+.step-expanation>h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+
+p,
+i {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 140%;
+    margin: 10px 0;
+}
+
+i {
+    font-weight: bold;
+}
+
+table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+table,
+th,
+td {
+    text-align: center;
+    padding: 3px;
+}
+
+th,
+td {
+    margin: 5px;
+    background-color: antiquewhite;
+}
+
+ul {
+    margin-left: 16px;
+}
+
+li,
+a {
+    font-size: 14px;
+}
+
+.new-section {
+    padding: 1rem;
+}
+
+
+.footer1 p {
+    color: #bebebe;
+}
+
+.footer1 {
+    background-color: white;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: bold;
+}
+
+
+
+#contact {
+    color: white;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+
+#horizontal-line {
+    background-color: #36363a;
+    height: 1px;
+    margin: 3% 0;
+}
+
+.step-4 .card_outer {
+    max-width: 500px !important;
+    width: 96%;
+}
+
+
+@media (max-width: 700px) {
+    .dotted_line{
+        margin-left: 80%;
+    }
+}
+@media (max-width: 640px) {
+    .dotted_line{
+        margin-left: 77%;
+    }
+    .card_cover{
+        align-items: center;
+        flex-direction: column;
+    }
+    .card_individual:nth-child(1) , .card_individual:nth-child(2){
+        width: 50%;
+        flex-basis: 50%;
+    }
+    .card_individual:last-child{
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
+@media screen and (min-width: 640px) {
+    .footer_text1{
+        flex-basis: 58%;
+        text-align: start;
+        padding-left: 10%;
+    }
+    .footer_text2{
+        flex-basis: 40%;
+        padding-left: 10%;
+        margin-top: 0px;
+        text-align: start;
+        border-left: 1px solid #6779ee;
+    }
+    .footer_text3{
+        flex-basis: 100%;
+        padding: 15px 0 0;
+        border-top: 1px solid #6779ee;
+        border-left: none;
+        margin-top: 0;
+    }
+    .footer_text1 p , .footer_text1 h6{
+        text-align: start;
+    }
+    .footer_text2 p , .footer_text2 h6{
+        text-align: start;
+    }
+}
+@media (min-width: 576px) {
+    .counting_steps{
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .sub_step{
+        flex-basis: 30%;
+        width: 33%;
+        margin: 10px auto 0 0;
+    }
+}
+@media screen and (max-width: 583px){
+    .step_heading span {
+        left: -9%;
+    }
+}
+@media (max-width: 500px) {
+    .dotted_line{
+        margin-left: 62%;
+    }
+    .step_heading span {
+        left: -45px;
+    }
+}
+@media (max-width: 400px) {
+    .dotted_line{
+        margin-left: 60%;
+    }
+    .card_cover{
+        align-items: center;
+        flex-direction: column;
+    }
+    .card_individual{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 345px) {
+    .step_heading span {
+        left: -40px;
+    }
+    .steps_icons{
+        margin-right: -15px;
+    }
+}
+@media (max-width: 300px) {
+    .step_heading span{
+        left: -38px;
+        position: absolute;
+        top: 50%;  
+        transform: translateY(-50%); 
+    }
+    .dotted_line{
+        margin: 0 auto !important;
+    }
+}
+
+
+@media (min-width: 345px) {
+    .dashed_card{
+        margin-right: 25px;
+    }
+}
+@media (min-width: 405px) {
+    .dashed_cards{
+        justify-content: start !important;
+    }
+}
+@media (min-width: 450px) {
+    .card_cover{
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 576px) {
+    .container,
+    .container-sm {
+        max-width: 100% !important;
+    }
+}
